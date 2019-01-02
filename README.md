@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+or you can head over to the Url `https://pras75299.github.io/Angular-Form-Practice/`
 
 ## Code scaffolding
 
