@@ -5,17 +5,28 @@ import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
     CourseFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'course-form', component: CourseFormComponent},
+      {path: 'contact-form', component: ContactFormComponent},
+      {path: '**', component: NotfoundComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
